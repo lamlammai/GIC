@@ -1,0 +1,389 @@
+@import "./font.css";
+::-webkit-scrollbar {
+  background-color: inherit;
+  height: 2px;
+  position: absolute;
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #b5b4b4;
+  border-radius: 10px;
+}
+html {
+  font-size: 16px;
+}
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+::placeholder {
+  font-weight: 400;
+  color: #b5b4b4;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+::placeholder,
+select {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  color: #727272;
+}
+
+::placeholder,
+input {
+  font-weight: 400;
+  color: #b5b4b4;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+select:focus,
+input:focus,
+textarea:focus {
+  /* border-color: #b70d02; */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+button,
+a,
+input,
+select,
+textarea {
+  outline: none;
+}
+
+a {
+  background-color: transparent;
+  color: inherit;
+  text-decoration: none;
+}
+
+img,
+iframe,
+video {
+  max-width: 100%;
+  margin-top: 0;
+}
+.content {
+  padding: 0 16px;
+}
+.pay_wrapper {
+  max-width: 450px;
+  margin: auto;
+  background-image: url("../images/bg1.png");
+  background-position: 100% 100%;
+  background-size: 100% 100%;
+  color: #fff;
+  font-family: "San Francisco Display";
+  min-height: 100vh;
+  position: relative;
+}
+.pay-header {
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 50px;
+  padding: 0 20px;
+}
+.pay-header .logo {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+}
+.pay-title {
+  font-family: "San Francisco Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  color: #eeeeee;
+  mix-blend-mode: normal;
+  margin-bottom: 12px;
+}
+.pay-body {
+  background-image: url("../images/thanh-toan/pack.png");
+  background-position: 100% 100%;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  padding: 8px 10px;
+}
+.pay-info-top {
+  background-image: url("../images/thanh-toan/pack1.png");
+  background-position: 100% 100%;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  padding: 10px;
+}
+.pay-info-title {
+  font-family: "San Francisco Display";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  color: #cbcbcb;
+  margin-top: 8px;
+}
+.pay-info-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.pay-info-sim-name {
+  font-family: "San Francisco Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: #eeeeee;
+  margin: 5px 0;
+}
+.pay-info-sim-price {
+  font-family: "San Francisco Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: right;
+  color: #eeeeee;
+}
+.pay-info-checkbox {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.pay-info-checkbox label {
+  font-family: "San Francisco Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #eeeeee;
+  margin-left: 5px;
+}
+.pay-info-bottom {
+  padding: 20px;
+  padding-bottom: 0;
+}
+.pay-info-topping-name {
+  font-family: "San Francisco Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #eeeeee;
+}
+.pay-info-pack-price {
+  font-family: "San Francisco Display";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  color: #eeeeee;
+}
+.pay_main {
+  margin-top: 26px;
+}
+.pay-input {
+  background: #262c38;
+  border: 1px solid #3d4052;
+  border-radius: 8px;
+  font-family: "San Francisco Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 12px;
+  width: 100%;
+  margin-bottom: 12px;
+}
+.pay-radio label {
+  font-family: "San Francisco Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #eeeeee;
+}
+.pay-radio {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.pay-address {
+  margin-top: 12px;
+}
+select {
+  background: #262c38;
+  border: 1px solid #3d4052;
+  border-radius: 8px;
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 12px;
+}
+::placeholder,
+select {
+  color: #eee;
+}
+::placeholder,
+input {
+  color: #8f8e92;
+}
+.payment_methods_title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.pay-link {
+  font-family: "San Francisco Display";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  color: #ac8eff;
+}
+.payment_methods_item {
+  position: relative;
+}
+.payment_methods_text {
+  position: absolute;
+  top: 0;
+  margin: 12px;
+}
+.payment_methods_name {
+  font-family: "San Francisco Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  color: #eeeeee;
+}
+.pay_discount {
+  margin-top: 8px;
+  background: #373d47;
+  border-radius: 33px;
+  font-family: "San Francisco Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 16px;
+  color: #eeeeee;
+  padding: 4px;
+}
+.payment_methods_list {
+  display: flex;
+  overflow-x: auto;
+  align-items: center;
+  justify-content: flex-start;
+}
+.payment_methods_item {
+  min-width: 250px;
+  min-height: 80px;
+  margin-right: 12px;
+}
+.payment_methods_item img {
+  width: 100%;
+  height: 100%;
+}
+.payment_methods_list::-webkit-scrollbar {
+  height: 0px;
+}
+.checkbox-agreee {
+  font-family: "San Francisco Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #eeeeee;
+}
+.pay-capcha {
+  margin-top: 20px;
+}
+.capcha-thumb {
+  background: #373d47;
+  border-radius: 12px;
+  padding: 36px 12px;
+  padding-bottom: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 12px;
+}
+.capcha-img {
+  max-width: 276px;
+}
+.reload {
+  width: 100%;
+  text-align: right;
+}
+.reload img {
+  width: 24px;
+  height: 24px;
+}
+.pay-bottom {
+  background: #373d47;
+  border-radius: 20px 20px 0px 0px;
+  margin-top: 28px;
+  padding: 12px 24px;
+}
+.pay-detail {
+  text-align: center;
+}
+.sum-price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 16px;
+}
+.sum-title {
+  font-family: "San Francisco Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  color: #eeeeee;
+}
+.sum-value {
+  font-family: "San Francisco Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: #eeeeee;
+}
+.button-pay {
+  background: #7361e3;
+  border-radius: 91px;
+  text-align: center;
+  padding: 12px;
+  font-family: "San Francisco Display";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  color: #eeeeee;
+  margin: 20px 0 16px 0;
+  cursor: pointer;
+}

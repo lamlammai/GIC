@@ -1,0 +1,336 @@
+@import "./font.css";
+::-webkit-scrollbar {
+  background-color: inherit;
+  height: 2px;
+  position: absolute;
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #b5b4b4;
+  border-radius: 10px;
+}
+html {
+  font-size: 16px;
+}
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+::placeholder {
+  font-weight: 400;
+  color: #b5b4b4;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+::placeholder,
+select {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  color: #727272;
+}
+
+::placeholder,
+input {
+  font-weight: 400;
+  color: #b5b4b4;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+select:focus,
+input:focus,
+textarea:focus {
+  border-color: #b70d02;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+button,
+a,
+input,
+select,
+textarea {
+  outline: none;
+}
+
+a {
+  background-color: transparent;
+  color: inherit;
+  text-decoration: none;
+}
+
+img,
+iframe,
+video {
+  max-width: 100%;
+  margin-top: 0;
+}
+.content {
+  padding: 0 16px;
+}
+.personalized_experience_wrapper {
+  max-width: 450px;
+  margin: auto;
+  background-image: url("../images/bg1.png");
+  background-position: 100% 100%;
+  background-size: 100% 100%;
+  color: #fff;
+  font-family: "San Francisco Display";
+  min-height: 100vh;
+  position: relative;
+}
+.personalized_experience-header {
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 50px;
+  padding: 0 20px;
+}
+.personalized_experience-header .logo {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+}
+.personalized_experience-body {
+  background-color: #262c38;
+  margin-top: 72px;
+  border-radius: 8px;
+  padding: 24px 40px;
+}
+.step1,
+.step2,
+.step4 {
+  display: none;
+}
+.step-title {
+  font-family: "San Francisco Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #eeeeee;
+}
+.personalized_experience-item {
+  position: relative;
+  max-height: 120px;
+  border-radius: 8px;
+  overflow: hidden;
+  min-height: 98px;
+  margin-bottom: 16px;
+}
+.personalized_experience-item img {
+  width: 100%;
+  height: 100%;
+}
+.personalized_experience-item-value {
+  top: 0;
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "San Francisco Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: #57dce1;
+}
+.personalized_experience-item-value.item2 {
+  color: #ff8ae6;
+}
+.personalized_experience-list {
+  margin-top: 24px;
+}
+.process-dots {
+  text-align: center;
+  margin-top: 12px;
+}
+.process-dots span {
+  width: 25px;
+  height: 5px;
+  display: inline-block;
+  margin-right: 3px;
+  border-radius: 11.5px;
+  background-color: #3d4052;
+}
+.process-dots span.active {
+  background-color: #ac8eff;
+}
+.personalized_experience-footer {
+  position: absolute;
+  bottom: 28px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15px;
+}
+.personalized_experience-footer-value {
+  font-family: "San Francisco Display";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  color: #eeeeee;
+}
+.btn-next {
+  border: 2px solid #7361e3;
+  padding: 18.4px 20px;
+  border-radius: 50%;
+}
+.personalized_experience-list.list-4 {
+  display: grid;
+  grid-gap: 16px 12px;
+  grid-template-columns: repeat(2, 1fr);
+}
+.personalized_experience-list.list-4 .personalized_experience-item {
+  margin-bottom: 0;
+}
+.personalized_experience-item-mxh {
+  font-family: "San Francisco Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  position: absolute;
+  top: 8px;
+  left: 8px;
+}
+.personalized_experience-item-mxh.TikTok {
+  color: #57dce1;
+}
+.personalized_experience-item-mxh.Facebook {
+  color: #6599fb;
+}
+.personalized_experience-item-mxh.Youtube {
+  color: #e54748;
+}
+.personalized_experience-item-mxh.Instagram {
+  color: #d7ba6f;
+}
+.lucky-number {
+}
+.lucky-number-item {
+  width: 51.56px;
+  height: 51.55px;
+  font-family: "San Francisco Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 53px;
+  color: #8f8e92;
+  text-align: center;
+  border-radius: 7px;
+}
+.lucky-number-item.lucky-number-item1 {
+  transform: matrix(0.98, -0.19, 0.19, 0.98, 0, 0);
+  background: linear-gradient(180deg, #313845 0%, #262c38 100%);
+  border-radius: 6.44449px;
+  transform: matrix(0.98, -0.19, 0.19, 0.98, 0, 0);
+}
+.lucky-number-item.lucky-number-item2 {
+  box-shadow: inset 0px 0.96091px 1.92182px rgba(59, 109, 238, 0.2);
+  transform: matrix(0.99, 0.14, -0.14, 0.99, 0, 0);
+}
+.lucky-number-item.lucky-number-item3 {
+  box-shadow: inset 0px 0.891255px 1.78251px rgba(59, 109, 238, 0.2);
+  transform: matrix(0.97, -0.26, 0.26, 0.97, 0, 0);
+}
+.lucky-number-item.lucky-number-item4 {
+  box-shadow: inset 0px 0.902267px 1.80453px rgba(59, 109, 238, 0.2);
+  transform: matrix(0.98, 0.19, -0.19, 0.98, 0, 0);
+}
+
+.lucky-number-item.lucky-number-item5 {
+  box-shadow: inset 0px 1.00518px 2.01036px rgba(59, 109, 238, 0.2);
+  transform: matrix(1, -0.08, 0.08, 1, 0, 0);
+}
+.lucky-number-item.lucky-number-item6 {
+  box-shadow: inset 0px 0.854731px 1.70946px rgba(59, 109, 238, 0.2);
+  transform: matrix(0.99, 0.14, -0.14, 0.99, 0, 0);
+}
+.lucky-number-item.lucky-number-item7 {
+  box-shadow: inset 0px 0.963224px 1.92645px rgba(59, 109, 238, 0.2);
+  transform: matrix(1, 0.04, -0.04, 1, 0, 0);
+}
+.lucky-number-item.lucky-number-item8 {
+  box-shadow: inset 0px 0.95119px 1.90238px rgba(59, 109, 238, 0.2);
+  transform: matrix(0.97, -0.22, 0.22, 0.97, 0, 0);
+}
+.lucky-number-item.lucky-number-item9 {
+  box-shadow: inset 0px 0.890504px 1.78101px rgba(59, 109, 238, 0.2);
+  transform: matrix(0.98, 0.19, -0.19, 0.98, 0, 0);
+}
+.lucky-number-item.lucky-number-item10 {
+}
+.lucky-number-list {
+  display: flex;
+  justify-content: space-between;
+}
+.lucky-number-list:nth-child(1) {
+  margin: 23px 70px 12px 50px;
+}
+.lucky-number-list:nth-child(2) {
+  margin: 0 65px 12px 55px;
+}
+.lucky-number-list:nth-child(3) {
+  margin: 0 30px 12px 28px;
+}
+.personalized_experience_wrapper {
+  display: none;
+}
+.personalized_experience_last {
+  max-width: 450px;
+  margin: auto;
+  background-image: url("../images/bg3.png");
+  background-position: 100% 100%;
+  background-size: 100% 100%;
+  color: #fff;
+  font-family: "San Francisco Display";
+  min-height: 100vh;
+  position: relative;
+  background-repeat: no-repeat;
+}
+.personalized_experience_last-thumb {
+  position: absolute;
+  top: -12%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.personalized_experience_last-img1 {
+  width: 66.12px;
+}
+.personalized_experience_last-value {
+  font-family: "San Francisco Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: #eeeeee;
+  width: 55%;
+  margin-top: 20px;
+}

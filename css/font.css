@@ -1,0 +1,28 @@
+@font-face {
+  font-family: "San Francisco Display";
+  src: url("../font/SFNSDisplay-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "San Francisco Display";
+  src: url("../font/SFNSDisplay-Medium.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "San Francisco Display";
+  src: url("../font/SFNSDisplay-Semibold.otf") format("opentype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "San Francisco Display";
+  src: url("../font/SFNSDisplay-Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
